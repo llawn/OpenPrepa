@@ -25,7 +25,7 @@ jobs:
         run: |
           apk add --no-cache python3 typst uv
           uv python install
-          uv pip install --system mkdocs mkdocs-material
+          uv pip install mkdocs mkdocs-material
 
       - name: Build PDFs and site
         run: make build-mkdocs
