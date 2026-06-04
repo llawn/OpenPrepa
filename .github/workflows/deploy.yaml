@@ -23,7 +23,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          apk add --no-cache typst uv
+          apk add --no-cache python3 typst uv
+          uv python install
           uv pip install --system mkdocs mkdocs-material
 
       - name: Build PDFs and site
