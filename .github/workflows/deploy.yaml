@@ -23,7 +23,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          apk add --no-cache python3 typst uv
+          apk add --no-cache python3 typst uv make
           uv python install
           uv venv
           source .venv/bin/activate
