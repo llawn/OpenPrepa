@@ -25,6 +25,8 @@ jobs:
         run: |
           apk add --no-cache python3 typst uv
           uv python install
+          uv venv
+          source .venv/bin/activate
           uv pip install mkdocs mkdocs-material
 
       - name: Build PDFs and site
