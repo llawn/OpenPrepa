@@ -23,16 +23,12 @@ jobs:
 
       - name: Install dependencies
         run: |
-          apk add --no-cache python3 typst uv make gzip tar
+          apk add --no-cache typst uv make gzip tar
           uv python install
-          uv venv
-          source .venv/bin/activate
-          uv pip install mkdocs mkdocs-material
+          uv sync
 
       - name: Build PDFs and site
-        run: |
-          source .venv/bin/activate
-          make build-mkdocs
+        run: uv run make build-mkdocs
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

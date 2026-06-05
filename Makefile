@@ -1,5 +1,5 @@
 TYPST := $(shell command -v typst 2>/dev/null)
-MKDOCS := $(shell command -v mkdocs 2>/dev/null)
+MKDOCS := .venv/bin/mkdocs
 PDFDIR := docs/pdfs
 
 TYP_FILES := $(shell find . -name '*.typ' ! -path './.git/*' ! -path './docs/*' ! -path './site/*')

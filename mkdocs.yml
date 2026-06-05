@@ -1,6 +1,18 @@
 site_name: OpenPrepa
 site_url: https://llawn.github.io/OpenPrepa/
 repo_url: https://github.com/llawn/OpenPrepa
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+
+extra_css:
+  - https://unpkg.com/katex@0/dist/katex.min.css
+
 theme:
   name: material
   palette:
@@ -20,6 +32,7 @@ extra:
 use_directory_urls: true
 nav:
   - Accueil: index.md
-  - X-ENS:
-    - 2021:
-      - Mathématiques A: pdfs/X-ENS/2021/mathsA.pdf
+  - MP:
+    - X-ENS:
+      - 2021:
+          - Maths A - Sous-groupes finis de $\operatorname{GL}_n(\mathbb{Z})$: pdfs/MP/X-ENS/2021/mathsA.pdf
