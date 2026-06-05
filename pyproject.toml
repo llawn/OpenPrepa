@@ -1,7 +1,7 @@
 [project]
 name = "openprepa"
 version = "0.1.0"
-description = "Add your description here"
+description = "Cours et corrections pour classes préparatoires scientifiques"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
