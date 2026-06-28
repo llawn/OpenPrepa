@@ -8,15 +8,15 @@
 
 #proof[
 
-  Cela nous fournit $d in NN^*$, tel que $z^d=1$.
-  On pose $phi$ la fonction suivante:
+  $z$ racine de l'unité, nous fournit $d in NN^*$, tel que $z^d=1$.
 
-  $ phi : (r, theta) in  RR_+ times [0, 2pi[ &|-> r e^(i theta) in CC $
+  On pose $phi$ la fonction suivante:
+  $phi : (r, theta) in  RR_+ times [0, 2pi[ &|-> r e^(i theta) in CC$.
 
   $phi$ est sujective, donc il existe $(r, theta) in RR_+ times [0, 2pi[$,
   tel que $z=r e^(i theta)$.
 
-  $|z| = r$ et $1 = |z^d| = |z|^d = r^d$ et $ r = (r^d)^(1/d)=1$
+  $|z| = r$ et $|z^d| = |z|^d = 1 >= 0$. Ainsi,  $ r = (r^d)^(1/d)=1$
   #solution-wide[$ |z| = r = 1 $]
 ]
 
@@ -26,8 +26,13 @@
 ]
 
 #proof[
-  On pose $P(X) = X^d - 1$, de sorte que $P(g)=g^d-I_n=0_n$.
-  $P$ est un polynôme anulateur de $g$ et $P(X)=product_(k=1)^d (X-e^((2 i k pi) / d))$.
+  Comme $g$ est d'ordre $d$, $g^d = I_n$.
+
+  On pose $N(X) = X^d - 1$, de sorte que $N(g)=g^d-I_n=0_n$.
+  $N$ est un polynôme anulateur de $g$ et
+
+  $ N(X)=product_(k=1)^d (X-e^((2 i k pi) / d)) $.
+
   Il est scindé à racines simples donc #solution[$g$ est diagonalisable].
 
   Ainsi il existe, $lambda_1, dots, lambda_n in CC$ et $Q in bold("GL")_n  (CC)$
@@ -59,8 +64,9 @@
 #proof[
 
   #subproof[
-    Soit $p in [|1,m|]$, tel que $q|p$. Il existe alors $d in ZZ$ tel que $q d = p$.
-    $q > 0, p>0$ donc $d>0$ également. Et $d = p/q <= m/q < floor(m/q)+1$ ainsi $d in [| 1, floor(m/q)|]$.
+    Soit $p in [|1,m|]$, tel que $q|p$. Il existe alors $d in ZZ$, tel que $q d = p$.
+
+    Or, $q > 0 "et" p>0$ donc $d>0$ également. Et $d = p/q <= m/q < floor(m/q)+1$ ainsi $d in [| 1, floor(m/q)|]$.
 
     On a montré, $ forall k in [|1, m|], q|k => exists d in [|1, floor(m/q)|] "tel que" q d = k$.
     Or, $d |-> q d$ est bijective donc
