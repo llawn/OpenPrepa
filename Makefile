@@ -2,7 +2,7 @@ TYPST := $(shell command -v typst 2>/dev/null)
 MKDOCS := .venv/bin/mkdocs
 PDFDIR := docs/pdfs
 
-TYP_FILES := $(shell find . -name '*.typ' ! -path './.git/*' ! -path './docs/*' ! -path './site/*')
+TYP_FILES := $(shell find . -name '*.typ' ! -name '_*.typ' ! -path './.git/*' ! -path './docs/*' ! -path './site/*')
 PDF_FILES := $(patsubst ./%.typ,$(PDFDIR)/%.pdf,$(TYP_FILES))
 
 .PHONY: all clean serve build-mkdocs help
