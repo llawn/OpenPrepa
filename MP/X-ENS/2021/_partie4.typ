@@ -3,7 +3,7 @@
 == 4. Cardinaux des $p$-sous-groupes de $bold("GL")_n (ZZ)$ <Partie4>
 
 #note[
-  Soit $G subset bold("GL"_n (CC))$, un sous-groupe fini.
+  Soit $G subset bold("GL")_n (CC)$, un sous-groupe fini.
   Dans cette partie, on démontre que pour $s in NN, sum_(g in G) "Tr"(g)^s$
   est un entier divisible par $"card"(G)$.
   On en déduit une borne uniforme sur les cardinal des sous-groupes finis de $bold("GL")_n (ZZ)$
@@ -12,13 +12,15 @@
 ]
 
 #question[
+  Soit $G subset bold("GL")_n (CC)$ un sous-groupe fini.
+  Soit $f = 1/"card"(G) sum_(g in G) g in cal(M)_n (CC)$.
 
   #subquestion[
-
+    Démontrer que $f$ est un projecteur sur ${ x in CC^n | forall g in G, g(x) = x}$.
   ]
 
   #subquestion[
-
+    En déduire que $ sum_(g in G) "Tr"(g)$ est un entier divisible par $"card"(G)$.
   ]
 ]
 
