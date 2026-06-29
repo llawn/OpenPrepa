@@ -34,9 +34,9 @@ nav:
   - Accueil: index.md
   - Fiches:
       - Maths:
-          - Calculus: pdfs/fiches/maths/calculus.pdf
+          - Calculus: pdfs/Fiches/maths/calculus.pdf
   - Concours:
       - MP:
           - X-ENS:
               - 2021:
-                  - Maths A - Sous-groupes finis de $\operatorname{GL}_n(\mathbb{Z})$: pdfs/sujet/MP/X-ENS/2021/mathsA.pdf
+                  - Maths A - Sous-groupes finis de $\operatorname{GL}_n(\mathbb{Z})$: pdfs/Sujet/MP/X-ENS/2021/mathsA.pdf
