@@ -2,14 +2,14 @@ TYPST := $(shell command -v typst 2>/dev/null)
 MKDOCS := .venv/bin/mkdocs
 PDFDIR := docs/pdfs
 
-TYP_FILES := $(shell find . -name '*.typ' ! -name '_*.typ' ! -path './.git/*' ! -path './docs/*' ! -path './site/*')
-PDF_FILES := $(patsubst ./%.typ,$(PDFDIR)/%.pdf,$(TYP_FILES))
+TYP_FILES := $(shell find src/ -name '*.typ' ! -name '_*.typ')
+PDF_FILES := $(patsubst src/%.typ,$(PDFDIR)/%.pdf,$(TYP_FILES))
 
 .PHONY: all clean serve build-mkdocs help
 
 all: $(PDF_FILES)
 
-$(PDFDIR)/%.pdf: ./%.typ
+$(PDFDIR)/%.pdf: src/%.typ
 	@mkdir -p "$(dir $@)"
 	@if [ -n "$(TYPST)" ]; then \
 		typst compile "$<" "$@"; \

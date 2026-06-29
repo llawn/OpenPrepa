@@ -32,7 +32,11 @@ extra:
 use_directory_urls: true
 nav:
   - Accueil: index.md
-  - MP:
-    - X-ENS:
-      - 2021:
-          - Maths A - Sous-groupes finis de $\operatorname{GL}_n(\mathbb{Z})$: pdfs/MP/X-ENS/2021/mathsA.pdf
+  - Fiches:
+      - Maths:
+          - Calculus: pdfs/fiches/maths/calculus.pdf
+  - Concours:
+      - MP:
+          - X-ENS:
+              - 2021:
+                  - Maths A - Sous-groupes finis de $\operatorname{GL}_n(\mathbb{Z})$: pdfs/sujet/MP/X-ENS/2021/mathsA.pdf
